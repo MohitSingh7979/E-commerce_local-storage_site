@@ -2,31 +2,30 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>JS_assisment</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script type="module" src="index_script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS_assisment</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="module" src="index_script.js"></script>
 </head>
 
 <body>
-	
-	<form id="signin_form">
-		<p>
-			Email
-			<input type="email" name="email" placeholder="ie. a@b.c" />
-		</p>
-		<p>
-			Password
-			<input type="password" name="password" />
-		</p>
-		<p>
-			New user?, <a href="/signup.html">Register here</a>
-		</p>
-		<p>
-			<input type="submit" value="Sign in" />
-		</p>
-	</form>
+  <form id="signin_form">
+    <p>
+      Email
+      <input type="email" name="email" placeholder="ie. a@b.c"  required/>
+    </p>
+    <p>
+      Password
+      <input type="password" name="password"  required/>
+    </p>
+    <p>
+      New user?, <a href="/signup.html">Register here</a>
+    </p>
+    <p>
+      <input type="submit" class="signin" value="Sign in" />
+    </p>
+  </form>
 </body>
 
 </html>

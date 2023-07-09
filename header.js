@@ -9,13 +9,14 @@ const headerArea = document.getElementById("header_area");
 headerArea.innerHTML =
     `<header>
       <ul class="flex-box">
-        <li>Welcome <b id="user_name">User</b></li>
+        <li class="welcome">Welcome <b class="username" id="user_name">User</b></li>
+
         <li>
           <ul class="flex-box">
 
-            <li class="hidden" id="btn_1_wrap"><button class="btn" id="btn_1"></button></li>
-            <li class="hidden" id="btn_2_wrap"><button class="btn" id="btn_2"></button></li>
-            <li class="hidden" id="btn_3_wrap"><button class="btn" id="btn_3"></button></li>
+            <li class="hidden" id="btn_1_wrap"><button class="menu-btn" id="btn_1"></button></li>
+            <li class="hidden" id="btn_2_wrap"><button class="menu-btn" id="btn_2"></button></li>
+            <li class="hidden" id="btn_3_wrap"><button class="menu-btn" id="btn_3"></button></li>
 
             <li><button class="btn logout" id="logout_btn">Logout</button></li>
           </ul>

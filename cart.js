@@ -20,8 +20,8 @@ export default class Cart{
     return user.cart;
   }
 
-  // userData => "{"name": "mohit", }"
-  // userObj => {name: "mohit", age: 24}
+  // userData => "{"name": "ankush", }"
+  // userObj => {name: "ankush", age: 12}
   // user => new User{name, age} + methods
 
   static setCartToStorage(cart){
@@ -89,15 +89,15 @@ export function showCartItem(product, quantity) {
     return `<div class="product">
           <img src="${image}" width="100"/>
           <div class="product-info">
-            <h3 class="product-name" >${name}</h3>
+            <h3 class="product-name" >${name.toUpperCase()}</h3>
             <p class="product-price">Price: ${price}</p>
-            <p class="product-price">Quantity: <span id="quantity_${id}"> ${quantity} </span>
-              <button class="btn add" id="dec_btn_${id}">dec</button>
-              <button class="btn view" id="inc_btn_${id}">inc</button>
+            <p class="product-qty">Quantity: <span id="quantity_${id}"> ${quantity} </span>
+              <button class="dec" id="dec_btn_${id}">-</button>
+              <button class="add" id="inc_btn_${id}">+</button>
             </p>
           </div>
           <div class="product-desc">
-            <button class="btn add" id="del_btn_${id}">Delete</button>
+            <button class="btn delete" id="del_btn_${id}">Delete</button>
             <button class="btn view" id="view_desc_btn_${id}">View Desc</button>
           </div>
         </div>`;
