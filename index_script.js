@@ -18,10 +18,10 @@ if(!User.isLogged()){
     if(User.isValidUser(user, true)){
       const user = User.getInfo(email);
       User.setCurrentUser(user); // to signin user
-      window.location.href = "dashboard.html"; // to open dashboard
+      window.location.href = "/dashboard.html"; // to open dashboard
     }
   }
 }else{
   // means user logged in, and cart section will be shown
-  window.location.href = "dashboard.html";
+  window.location.href = "/dashboard.html";
 }
