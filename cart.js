@@ -87,16 +87,16 @@ export function showCartItem(product, quantity) {
     const {name, desc, price, image, id} = product;
     
     return `<div class="product">
-          <img src="${image}" width="100"/>
-          <div class="product-info">
+          <img src="${image}" class="product-image" width="100"/>
+          <div class="info">
             <h3 class="product-name" >${name.toUpperCase()}</h3>
             <p class="product-price">Price: ${price}</p>
             <p class="product-qty">Quantity: <span id="quantity_${id}"> ${quantity} </span>
-              <button class="dec" id="dec_btn_${id}">-</button>
-              <button class="add" id="inc_btn_${id}">+</button>
+              <button class="btn dec" id="dec_btn_${id}">-</button>
+              <button class="btn inc" id="inc_btn_${id}">+</button>
             </p>
           </div>
-          <div class="product-desc">
+          <div class="desc">
             <button class="btn delete" id="del_btn_${id}">Delete</button>
             <button class="btn view" id="view_desc_btn_${id}">View Desc</button>
           </div>

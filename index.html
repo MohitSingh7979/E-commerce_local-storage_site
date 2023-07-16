@@ -5,11 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS_assisment</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+    body{
+      justify-content: center;
+      align-items: center;
+    }
+    </style>
   <script type="module" src="index_script.js"></script>
 </head>
 
 <body>
+    <div class="form-wrapper">
+      
   <form id="signin_form">
     <p>
       Email
@@ -23,9 +33,11 @@
       New user?, <a href="/signup.html">Register here</a>
     </p>
     <p>
-      <input type="submit" class="signin" value="Sign in" />
+      <input type="submit" class="signin round focused-v2" value="Sign in" />
     </p>
   </form>
+
+    </div>
 </body>
 
 </html>
