@@ -61,13 +61,13 @@ export class Product {
   showProduct() {
     const { name, desc, price, image, id } = this;
 
-    return `<div class="product-item">
+    return `<div class="product">
           <img class="product-image" src="${image}" width="100"/>
-          <div class="product-info">
-            <h3 class="product-name" >${name.toUpperCase()}</h3>
-            <p class="product-price">Price: ${price}</p>
+          <div class="info">
+            <h3 class="name" >${name.toUpperCase()}</h3>
+            <p class="price">Price: ${price}</p>
           </div>
-          <div class="product-desc">
+          <div class="desc">
             <button class="btn add-cart" id="add_cart_btn_${id}">Add To Cart</button>
             <button class="btn view" id="view_desc_btn_${id}">View Desc</button>
           </div>

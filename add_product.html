@@ -5,37 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Add Product</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="common.css" rel="stylesheet" type="text/css" />
+  <link href="add_product.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+  <style>
+  </style>
   <script type="module" src="add_product_script.js"></script>
 </head>
 
 <body>
-  <div id="header_area">
+  <header class="header-wrapper" id="header_area">
     <script src="header.js" type="module"></script>
-  </div>
-  <form id="add_form">
-    <p>
-      Name:
-      <input type="text" name="name" required />
-    </p>
-    <p>
-      Image Url:
-      <input type="url" name="image" required />
-    </p>
-    <p>
-      Desc:
-      <input type="text" name="desc" required />
-    </p>
-    <p>
-      Price:
-      <input type="number" name="price" required />
-    </p>
-    <p>
-      <input type="submit" value="Add">
-    </p>
-    <p id="info"></p>
+  </header>
+  <main>
+    <div class="form-wrapper">
+      
+      <form id="add_form" >
+        <p>
+          Name:
+          <input type="text" name="name" required />
+        </p>
+        <p>
+          Image Url:
+          <input type="url" name="image" required />
+        </p>
+        <p>
+          Desc:
+          <input type="text" name="desc" required />
+        </p>
+        <p>
+          Price:
+          <input type="number" name="price" required />
+        </p>
+        <p>
+          <input type="submit" value="Add">
+        </p>
 
-  </form>
+      </form>
+
+      <p id="info"></p>
+    </div>
+  </main>
 </body>
 
 </html>
